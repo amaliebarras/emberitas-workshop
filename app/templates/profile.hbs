@@ -1,0 +1,15 @@
+{{someInformation}}
+
+<form {{action "setName" newName on="submit"}}>
+  <label>What is your new name?</label>
+  {{input value=newName}}
+  <button type="submit">Submit</button>
+</form>
+
+<form {{action "setColor" newColor on="submit"}}>
+  <label>What is your new favorite color?</label>
+  {{input value=newColor}}
+  <button type="submit">Submit</button>
+</form>
+
+{{outlet}}
